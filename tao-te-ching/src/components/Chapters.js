@@ -34,8 +34,23 @@ export default function Chapters() {
         ))}
       </Tabs>
       <Typography variant="h5" color="darkslategrey">
-        {taoTeChing[value]}
+        {taoTeChing[value].split("\n").map((item) => (
+          <span>
+            <br />
+            {item}
+            <br />
+          </span>
+        ))}
       </Typography>
     </Box>
   );
 }
+
+//{this.props.section.text.split(“\n”).map(function(item) {
+// return (
+//     <span>
+//       {item}
+//       <br/>
+//     </span>
+//   )
+// })}

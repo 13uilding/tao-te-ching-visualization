@@ -34,8 +34,8 @@ export default function Chapters() {
         ))}
       </Tabs>
       <Typography variant="h5" color="darkslategrey">
-        {taoTeChing[value].split("\n").map((item) => (
-          <span>
+        {taoTeChing[value].split("\n").map((item, index) => (
+          <span key={index}>
             <br />
             {item}
             <br />
